@@ -121,7 +121,9 @@ Gecode::LinExpr GecodeSolver::makeExpression(ParseTree* tree) {
 		string variableName = tree->value;
 
 		if (boost::starts_with(variableName, "sum_")) {
-			int index1 = variableName.find('_', 0);
+            throw dlvhex::PluginError("The modified plugin still do not support 'sum' global constraints. Sorry!");
+			/** TODO: uncomment when 'sum' global constraint will be supported */
+			/*int index1 = variableName.find('_', 0);
 			int index2 = variableName.find('_', index1 + 1);
 			string predicate = variableName.substr(index1 + 1, index2 - index1 - 1);
 			int position = atoi(variableName.substr(index2 + 1, variableName.length() - index2).c_str());
@@ -147,7 +149,7 @@ Gecode::LinExpr GecodeSolver::makeExpression(ParseTree* tree) {
 					ind++;
 				}
 			}
-			return result;
+			return result;*/
 		} else {
 			map<string, Gecode::IntVar>::iterator it = _constraintVariables.find(variableName);
 			if (it == _constraintVariables.end()) { // create fresh variable

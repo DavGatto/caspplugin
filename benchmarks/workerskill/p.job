@@ -1,0 +1,16 @@
+
+		Executable = ./benchmark_single.sh
+		Universe = vanilla
+		output = 1.out
+		error = 1.error
+		Log = 1.log
+		Requirements = machine == "lion.kr.tuwien.ac.at"
+		request_memory = 4096 
+		Initialdir = /home/dave/ProvaHex2/caspplugin/benchmarks/workerskill
+		notification = never
+
+		# queue
+		request_cpus = 1 
+		Arguments = /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games  1 6000
+		Queue 1
+	     

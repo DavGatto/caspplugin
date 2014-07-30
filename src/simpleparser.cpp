@@ -36,7 +36,7 @@ string SimpleParser::convertToPostfix(string infix)
 
 	stack<string> x;
 
-	char_separator<char> sep(" ", ",v.:-$%+-*/<>=()!", drop_empty_tokens);
+	char_separator<char> sep(" ", ",%+-*/<>=()!", drop_empty_tokens); /** Removed v : $ . */
 
 	tokenizer<char_separator<char> > tokens(infix, sep);
 	vector<string> tokenList;

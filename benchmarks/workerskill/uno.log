@@ -1,0 +1,22 @@
+000 (004.000.000) 07/10 17:03:17 Job submitted from host: <128.131.194.36:51731>
+...
+000 (007.000.000) 07/10 17:07:18 Job submitted from host: <128.131.194.36:51731>
+...
+007 (004.000.000) 07/11 04:32:02 Shadow exception!
+	Error from slot1@: Failed to open '/home/dave/ProvaHex2/caspplugin/benchmarks/workerskill/uno.out' as standard output: Permission denied (errno 13)
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (004.000.000) 07/11 04:32:02 Job was held.
+	Error from slot1@: Failed to open '/home/dave/ProvaHex2/caspplugin/benchmarks/workerskill/uno.out' as standard output: Permission denied (errno 13)
+	Code 7 Subcode 13
+...
+007 (007.000.000) 07/11 04:32:02 Shadow exception!
+	Error from slot2@: Failed to open '/home/dave/ProvaHex2/caspplugin/benchmarks/workerskill/uno.out' as standard output: Permission denied (errno 13)
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+012 (007.000.000) 07/11 04:32:02 Job was held.
+	Error from slot2@: Failed to open '/home/dave/ProvaHex2/caspplugin/benchmarks/workerskill/uno.out' as standard output: Permission denied (errno 13)
+	Code 7 Subcode 13
+...

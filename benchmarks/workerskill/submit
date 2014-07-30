@@ -1,0 +1,7 @@
+Universe = vanilla
+Executable = /usr/local/bin/dlvhex2
+Arguments = --plugindir=/home/dave/.dlvhex2/n-plugins --cspenable /home/dave/ProvaHex2/caspplugin/benchmarks/workerskill/1.hex
+Log = uno.log
+Output = uno.out
+Error = uno.error
+Queue

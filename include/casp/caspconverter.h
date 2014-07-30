@@ -12,7 +12,7 @@ public:
 	virtual void convert(std::istream& i, std::ostream& o);
 };
 
-
+bool syntaxCheckCnsAtm(std::string s, int LineNum);
 
 class CaspConverter : public dlvhex::PluginConverter {
 public:
@@ -20,7 +20,9 @@ public:
 	virtual ~CaspConverter();
 
 	virtual void convert(std::istream& i, std::ostream& o);
+
 };
 
 
-#endif /* CASPCONCERTER_H_ */
+
+#endif /* CASPCONVERTER_H_ */
